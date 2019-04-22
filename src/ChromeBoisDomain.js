@@ -6,7 +6,7 @@ export default class ChromeBoisDomain extends Component {
 
   handleMouseMove = (event) => {
     handleMouseMove(){
-      console.log('this is:', this);
+      console.log(this);
     }
 
     render(){
