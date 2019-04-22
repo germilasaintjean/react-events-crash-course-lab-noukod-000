@@ -12,8 +12,12 @@ export default class ChromeBoisDomain extends Component {
     render(){
       return (
         <button onClick={(x) => this.handleMouseMove(x)}>
+        Click me
+       </button>
         <button onClick={(y) => this.handleMouseMove(y)}>
-      )
+        Click me
+       </button>
+     );
     }
     /* TODO: This method should capture the `x` and `y` coordinates of the mouse
      * from the event and use them to invoke the `drawChromeBoiAtCoords`
