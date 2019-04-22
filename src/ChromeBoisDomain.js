@@ -8,7 +8,10 @@ export default class ChromeBoisDomain extends Component {
     const mouseX=event.clientX;
     const mouseY=event.clientY;
     drawChromeBoiAtCoords(mouseX,mouseY)
-  }    /* TODO: This method should capture the `x` and `y` coordinates of the mouse
+  }
+
+
+    /* TODO: This method should capture the `x` and `y` coordinates of the mouse
      * from the event and use them to invoke the `drawChromeBoiAtCoords`
      * function that has been provided and is already imported
      * (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
@@ -26,6 +29,14 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 'a', then it should call `resize` with '+'
   /* if the key pressed was 's', then it should call `resize` with '-'
    */
+
+   keyPressHandler=(event)=>{;
+      if(event.key==="a"){
+        resize("+")
+      }else if(event.key==="s"){
+        resize("-")
+      }
+    }
 
   render() {
     return (
